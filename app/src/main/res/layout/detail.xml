@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.3"
+        android:weightSum="3"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Title"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            />
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="#01CFFC" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2.4"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txt_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="360dp"
+            android:textColor="#000"
+            android:textSize="10dp"
+            android:text="contents"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="0"
+            android:scrollbars="vertical" />
+
+<!--        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:text="Time"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="0"/>-->
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.3"
+        android:background="#01CFFC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="좋아요"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="114dp"
+            android:id="@+id/textView2"
+            android:layout_marginStart="114dp"
+            android:layout_alignBottom="@+id/btn_like"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+<Button
+    android:id="@+id/btn_like"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:background="@drawable/icons5353"
+    android:layout_centerVertical="true"
+    android:layout_alignRight="@+id/textView2"
+    android:layout_alignEnd="@+id/textView2"
+    android:layout_marginRight="45dp"
+    android:layout_marginEnd="45dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="홈으로"
+            android:textColor="#FFFFFF"
+            android:layout_alignBottom="@+id/btn_home"
+            android:layout_toRightOf="@+id/btn_home"
+            android:layout_toEndOf="@+id/btn_home" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icons6030"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2" />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

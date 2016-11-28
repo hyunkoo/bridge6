@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6">
+
+    <!--    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtItem"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#01CFFC"
+        android:layout_weight="2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="메인 공지사항"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/btn_mypage"
+        android:layout_centerHorizontal="true" />
+
+
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icons6030"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_mypage"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="37dp"
+            android:layout_marginEnd="37dp" />
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="3">
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:dividerHeight="7dp"
+        android:divider="#ffffff"
+        android:background="#f6f6f6"
+        android:contextClickable="true"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:listSelector="#D5D5D5">
+        <!--android:fastScrollAlwaysVisible="true"-->
+    </ListView>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#01CFFC"
+        android:layout_gravity="bottom"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/icons5955"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="53dp"
+            android:id="@+id/btn_keyword"
+            android:layout_marginStart="53dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</LinearLayout>

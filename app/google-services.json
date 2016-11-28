@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "32835327498",
+    "project_id": "gcmapp-1320"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32835327498:android:bba459e4c6d303f2",
+        "android_client_info": {
+          "package_name": "com.bridge.gcmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32835327498-ep45p06heb4q767e4ubtv2n2nh6ot7j6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bridge.gcmapp",
+            "certificate_hash": "02765A71EC7F978AF5FABC0D9EEA77AC1910EA7D"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5SjtimhX6R9vku0j4bZY1nzXcVsodIy8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

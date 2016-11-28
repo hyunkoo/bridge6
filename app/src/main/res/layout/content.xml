@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bridge.gcmapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+<!-- 자체 DB 로그인 레이아웃 -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/ood"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:id="@+id/user_id"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:layout_below="@+id/user_id"
+        android:layout_alignLeft="@+id/user_id"
+        android:layout_alignStart="@+id/user_id" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/submit"
+        android:layout_below="@+id/autoLogin"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join"
+        android:layout_below="@+id/autoLogin"
+        android:layout_toRightOf="@+id/autoLogin"
+        android:layout_toEndOf="@+id/autoLogin" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동로그인"
+        android:id="@+id/autoLogin"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNewActivity"
+        android:layout_weight="1"
+        android:text="시작하기"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#01CFFC"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_weight="0.2"
+        android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="MyPage"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#01CFFC"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.7"/>
+
+        <View android:layout_width="fill_parent" android:layout_height="1dip" android:background="#01CFFC" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2.8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/addedKeyword"
+            android:text="등록한 키워드"
+            android:background="@drawable/textlines"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="53dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="내가 좋아하는 공지"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txt_like"
+            android:background="@drawable/textlines"
+            android:layout_below="@+id/addedKeyword"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="도움말 센터"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btn_help"
+            android:gravity="center"
+            android:background="@drawable/textlines"
+            android:layout_above="@+id/btn_service"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="서비스 약관 및 개인정보 보호정책"
+        android:id="@+id/btn_service"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/textlines"
+        android:layout_above="@+id/btn_logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="로그아웃"
+        android:id="@+id/btn_logout"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="@drawable/textlines"
+        android:layout_marginBottom="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
